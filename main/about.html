@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <title>Get Started | CodyFrame</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header position-relative js-header ">
+    <div class="header__container container max-width-lg">
+      <div class="header__logo">
+        <a href="/">
+          <svg width="104" height="30" viewBox="0 0 104 30"><title>Go to homepage</title><path d="M37.54 24.08V3.72h4.92v16.37h8.47v4zM60.47 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8 8 0 015.64-2.18 8.07 8.07 0 015.68 2.2 8.49 8.49 0 012 5.69 8.63 8.63 0 01-1.78 5.38 7.6 7.6 0 01-5.89 2.49zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.79 3-2.79 4.26.32 4.23 2.82 4.23zM95.49 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8.4 8.4 0 0111.31 0 8.43 8.43 0 012 5.69 8.6 8.6 0 01-1.77 5.38 7.6 7.6 0 01-5.89 2.51zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.8 3-2.8 4.26.31 4.23 2.83 4.23zM77.66 30c-5.74 0-7-3.25-7.23-4.52l4.6-.26c.41.91 1.17 1.41 2.76 1.41a2.45 2.45 0 002.82-2.53v-2.68a7 7 0 01-1.7 1.75 6.12 6.12 0 01-5.85-.08c-2.41-1.37-3-4.25-3-6.66 0-.89.12-3.67 1.45-5.42a5.67 5.67 0 014.64-2.4c1.2 0 3 .25 4.46 2.82V8.81h4.85v15.33a5.2 5.2 0 01-2.12 4.32A9.92 9.92 0 0177.66 30zm.15-9.66c2.53 0 2.81-2.69 2.81-3.91s-.31-4-2.81-4-2.81 2.8-2.81 4 .27 3.91 2.81 3.91zM55.56 3.72h9.81v2.41h-9.81z" fill="var(--color-contrast-higher)"/><circle cx="15" cy="15" r="15" fill="var(--color-primary)"/></svg>
+        </a>
+      </div>
+
+      <button class="btn btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+        <i class="header__trigger-icon" aria-hidden="true"></i>
+        <span>Menu</span>
+      </button>
+
+      <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
+        <div class="header__nav-inner">
+          <div class="header__label">Main menu</div>
+          <ul class="header__list">
+            <li class="header__item"><a href="about.html" class="header__link">About</a></li>
+            <li class="header__item"><a href="blog.html" class="header__link">Blog</a></li>
+            <li class="header__item"><a href="blog-article.html" class="header__link">Article</a></li>
+            <li class="header__item"><a href="pricing.html" class="header__link">Pricing</a></li>
+            <li class="header__item header__item--divider" aria-hidden="true"></li>
+            <li class="header__item">
+              <ul class="radio-switch js-radio-switch" id="switch-light-dark">
+                <li class="radio-switch__item">
+                  <input class="radio-switch__input sr-only" type="radio" name="radio-switch-name" id="radio-1" checked value="light">
+                  <label class="radio-switch__label" for="radio-1"><svg class="icon icon--xs" viewBox="0 0 16 16">
+                      <title>Enable light mode</title>
+                      <path d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.414-1.414zM14 7h2v2h-2zM12.95 14.433l-1.415-1.414 1.414-1.414 1.415 1.413zM7 14h2v2H7zM2.98 14.363L1.566 12.95l1.415-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.707L4.465 3.12 3.05 4.535 1.636 3.121z" />
+                      <path d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z" />
+                    </svg></label>
+                </li>
+
+                <li class="radio-switch__item">
+                  <input class="radio-switch__input sr-only" type="radio" name="radio-switch-name" id="radio-2"  value="dark">
+                  <label class="radio-switch__label" for="radio-2"><svg class="icon icon--xs" viewBox="0 0 16 16">
+                      <title>Enable dark mode</title>
+                      <path d="M6,0C2.5,0.9,0,4.1,0,7.9C0,12.4,3.6,16,8.1,16c3.8,0,6.9-2.5,7.9-6C9.9,11.7,4.3,6.1,6,0z"></path>
+                    </svg></label>
+                  <div aria-hidden="true" class="radio-switch__marker"></div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- feature-v12 -->
+  <section class="feature-v12 feature-v12--top feature-v12--left@md feature-v12--offset-sm feature-v12--offset-xl@md padding-y-xl">
+    <div class="container max-width-adaptive-lg">
+      <div class="grid flex-center">
+        <div class="col-10 col-5@md">
+          <div class="feature-v12__offset-item text-center text-left@md">
+            <h1 class="text-xxxl@sm">Apparently we had reached a great height in the atmosphere</h1>
+          </div>
+        </div>
+  
+        <div class="col-7@md">
+          <figure class="feature-v12__bg-item">
+            <img class="block width-100%" src="../../../assets/img/feature-v12-img-1.jpg" alt="Image description">
+          </figure>
+        </div>
+      </div>
+      <div class="text-component yx-ac yx-nh yx-tzi"><h2>Want to get in touch?</h2><p class="text-md color-contrast-medium">email@myemail.com</p></div>
+    </div>
+  </section>
+
+  <!-- Vertical Timeline -->
+
+  <div class="position-relative z-index-1 overflow-hidden padding-y-xl bg-dark">
+    <div class="margin-bottom-lg">
+      <h1 class="text-center">Vertical Timeline</h1>
+    </div>
+  
+    <div class="container max-width-adaptive-lg">
+      <div class="v-timeline js-v-timeline" data-animation="on">
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark" aria-hidden="true"></div>
+    
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm">
+                <time class="v-timeline__date-value" datetime="2020-03-18T00:00">Mar 18, 2020</time>
+              </div>
+    
+              <div class="text-component">
+                <h2>Title of item 1</h2>
+      
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem omnis officiis fuga nostrum.</p>
+              </div>
+    
+              <div class="margin-top-md">
+                <a class="btn btn--primary" href="#0">Read More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark" aria-hidden="true"></div>
+    
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm">
+                <time class="v-timeline__date-value" datetime="2020-03-26T00:00">Mar 26, 2020</time>
+              </div>
+    
+              <div class="text-component">
+                <h2>Title of item 2</h2>
+      
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam eveniet earum ad ratione reprehenderit nihil, mollitia adipisci cum eaque?</p>
+              </div>
+    
+              <div class="margin-top-md">
+                <a class="btn btn--primary" href="#0">Read More</a>
+              </div>
+            </div>
+  
+            <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+              <div class="text-component">
+                <h2>Title of item 3</h2>
+      
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, totam.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark" aria-hidden="true"></div>
+    
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm">
+                <time class="v-timeline__date-value" datetime="2020-04-08T00:00">Apr 08, 2020</time>
+              </div>
+    
+              <div class="text-component">
+                <h2>Title of item 4</h2>
+      
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi praesentium dolore debitis cum nesciunt cumque placeat voluptatibus natus, necessitatibus numquam sunt, laborum possimus id?</p>
+  
+                <figure class="text-component__block">
+                  <img src="../../../assets/img/vertical-timeline-img-1.jpg" alt="Image description">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark" aria-hidden="true"></div>
+    
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm">
+                <time class="v-timeline__date-value" datetime="2020-05-17T00:00">May 17, 2020</time>
+              </div>
+    
+              <div class="text-component">
+                <h2>Title of item 5</h2>
+      
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem omnis officiis fuga nostrum.</p>
+  
+                <ul>
+                  <li>List item 1</li>
+                  <li>List item 2</li>
+                  <li>List item 3</li>
+                </ul>
+              </div>
+    
+              <div class="margin-top-md">
+                <a class="btn btn--primary" href="#0">Read More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark" aria-hidden="true"></div>
+    
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm">
+                <time class="v-timeline__date-value" datetime="2020-06-01T00:00">Jun 01, 2020</time>
+              </div>
+    
+              <div class="text-component">
+                <h2>Title of item 6</h2>
+      
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic dicta, quos reprehenderit quidem omnis officiis fuga nostrum.</p>
+              </div>
+    
+              <div class="margin-top-md">
+                <a class="btn btn--primary" href="#0">Read More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+    <!-- Image Interest -->
+    <section class="position-relative z-index-1 padding-y-xxl" data-theme="secondary">
+      <div class="container max-width-adaptive-lg">
+      <div class="margin-bottom-lg">
+      <h1 class="text-center">Image <em class="font-italic">Interest</em> Points</h1>
+      </div>
+      <figure class="position-relative z-index-1">
+        <img class="block width-100%" src="../../assets/img/image-interest-points-img-1.jpg" alt="Product Image">
+      
+        <ul class="poi js-poi">
+          <li style="top: 30%; left: 10%;" class="poi__item js-poi__item">
+            <button class="reset poi__btn" aria-label="Point 1. Click for more info." aria-controls="poi-modal-1">
+              <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+            </button>
+          </li>
+      
+          <li style="top: 56%; left: 35%;" class="poi__item js-poi__item">
+            <button class="reset poi__btn" aria-label="Point 2. Click for more info." aria-controls="poi-modal-2">
+              <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+            </button>
+          </li>
+      
+          <li style="top: 20%; left: 50%;" class="poi__item js-poi__item">
+            <button class="reset poi__btn" aria-label="Point 3. Click for more info." aria-controls="poi-modal-3">
+              <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+            </button>
+          </li>
+      
+          <li style="bottom: 23%; right: 20%;" class="poi__item js-poi__item">
+            <button class="reset poi__btn" aria-label="Point 4. Click for more info." aria-controls="poi-modal-4">
+              <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+            </button>
+          </li>
+        </ul>
+      </figure>
+      
+      <!-- Modal elements - one for each POI -->
+      <!-- POI 1 -->
+      <div id="poi-modal-1" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
+        <div class="modal__content width-100% max-width-xxs max-width-xs@md max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
+          <div class="padding-sm">
+            <div class="grid gap-sm">
+              <figure class="col-5@md">
+                <img class="block width-100%" src="../../assets/img/image-interest-points-img-2.jpg" alt="Image description">
+              </figure>
+      
+              <div class="col-7@md">
+                <div class="text-component">
+                  <h1 class="text-lg">Cool Plant</h1>
+                  <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
+                </div>
+              </div>
+            </div>
+      
+            <footer class="margin-top-sm flex justify-between items-center">
+              <p>$12.00</p>
+              <a class="btn btn--primary" href="#0">Buy Now</a>
+            </footer>
+          </div>
+        </div>
+      
+        <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
+          <svg class="icon icon--sm" viewBox="0 0 24 24">
+            <title>Close modal window</title>
+            <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="3" x2="21" y2="21" />
+              <line x1="21" y1="3" x2="3" y2="21" />
+            </g>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- POI 2 -->
+      <div id="poi-modal-2" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
+        <div class="modal__content width-100% max-width-xs max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
+          <div class="padding-sm">
+            <div class="text-component">
+              <h1 class="text-md">Headphones</h1>
+              <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
+            </div>
+      
+            <footer class="margin-top-sm flex justify-between items-center">
+              <p>$259.00</p>
+              <a class="btn btn--primary" href="#0">Buy Now</a>
+            </footer>
+          </div>
+        </div>
+      
+        <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
+          <svg class="icon icon--sm" viewBox="0 0 24 24">
+            <title>Close modal window</title>
+            <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="3" x2="21" y2="21" />
+              <line x1="21" y1="3" x2="3" y2="21" />
+            </g>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- POI 3 -->
+      <div id="poi-modal-3" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
+        <div class="modal__content width-100% max-width-xs max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
+          <div class="padding-sm">
+            <div class="text-component">
+              <h1 class="text-md">Monitor</h1>
+              <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
+            </div>
+      
+            <footer class="margin-top-sm flex justify-between items-center">
+              <p>$129.00</p>
+              <a class="btn btn--primary" href="#0">Buy Now</a>
+            </footer>
+          </div>
+        </div>
+      
+        <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
+          <svg class="icon icon--sm" viewBox="0 0 24 24">
+            <title>Close modal window</title>
+            <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="3" x2="21" y2="21" />
+              <line x1="21" y1="3" x2="3" y2="21" />
+            </g>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- POI 4 -->
+      <div id="poi-modal-4" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
+        <div class="modal__content width-100% max-width-xs max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
+          <div class="padding-sm">
+            <div class="text-component">
+              <h1 class="text-md">Keyboard</h1>
+              <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
+            </div>
+      
+            <footer class="margin-top-sm flex justify-between items-center">
+              <p>$49.00</p>
+              <a class="btn btn--primary" href="#0">Buy Now</a>
+            </footer>
+          </div>
+        </div>
+      
+        <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
+          <svg class="icon icon--sm" viewBox="0 0 24 24">
+            <title>Close modal window</title>
+            <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="3" x2="21" y2="21" />
+              <line x1="21" y1="3" x2="3" y2="21" />
+            </g>
+          </svg>
+        </button>
+      </div>
+      </div>
+      </section>
+
+  <!-- Questions & Answers -->
+  <section class="position-relative z-index-1 padding-y-xxl" data-theme="dark">
+    <div class="container max-width-sm position-relative z-index-2">
+      <div class="margin-bottom-lg">
+        <h1 class="text-center">Questions &amp; Answers</h1>
+      </div>
+      
+      
+      <ol class="text-points text-points--counter grid gap-lg">
+        <li class="text-points__item col-6@md">
+          <div class="text-component">
+            <h3 class="text-points__title">Text Point 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </li>
+      
+        <li class="text-points__item col-6@md">
+          <div class="text-component">
+            <h3 class="text-points__title">Text Point 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quia iure quaerat possimus quasi? Enim, provident!</p>
+          </div>
+        </li>
+      
+        <li class="text-points__item col-6@md">
+          <div class="text-component">
+            <h3 class="text-points__title">Text Point 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate explicabo est magnam nobis ea maiores soluta, repellendus iure temporibus fugiat.</p>
+          </div>
+        </li>
+      
+        <li class="text-points__item col-6@md">
+          <div class="text-component">
+            <h3 class="text-points__title">Text Point 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt illo a eveniet quod voluptatum nesciunt doloremque sapiente inventore, impedit, rem sint.</p>
+          </div>
+        </li>
+      
+        <li class="text-points__item col-6@md">
+          <div class="text-component">
+            <h3 class="text-points__title">Text Point 5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quibusdam libero quasi pariatur rerum explicabo. Suscipit libero voluptates repellendus dolorem sequi, quibusdam molestiae aliquid, soluta dignissimos mollitia asperiores.</p>
+          </div>
+        </li>
+      
+        <li class="text-points__item col-6@md">
+          <div class="text-component">
+            <h3 class="text-points__title">Text Point 5</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, exercitationem rem. Nulla aut amet error vero nemo dignissimos tempore magnam, adipisci veniam, iusto asperiores ducimus, iure totam voluptatum cumque est quia delectus.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <figure class="bg-decoration z-index-1" aria-hidden="true">
+      <svg class="bg-decoration__svg color-contrast-low" viewBox="0 0 1920 450" fill="none">
+        <rect opacity="0.5" x="1410.61" y="42.6123" width="246.643" height="304.604"
+          transform="rotate(-45 1410.61 42.6123)" fill="url(#bg-decoration-v1-fx-1-linear-1)" />
+        <rect opacity="0.5" x="1176" y="-20.5969" width="246.643" height="304.604" transform="rotate(-45 1176 -20.5969)"
+          fill="url(#bg-decoration-v1-fx-1-linear-2)" />
+        <circle opacity="0.5" cx="1572" cy="205" r="46" fill="url(#bg-decoration-v1-fx-1-radial-1)" />
+        <g opacity="0.5" filter="url(#bg-decoration-v1-fx-1-blur-1)">
+          <circle cx="1680" cy="324" r="26" fill="var(--color-primary)" />
+        </g>
+        <defs>
+          <filter id="bg-decoration-v1-fx-1-blur-1" x="1644" y="288" width="72" height="72" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur" />
+          </filter>
+          <linearGradient id="bg-decoration-v1-fx-1-linear-1" x1="1533.93" y1="42.6123" x2="1533.93" y2="347.217"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="currentColor" />
+            <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+          </linearGradient>
+          <linearGradient id="bg-decoration-v1-fx-1-linear-2" x1="1299.32" y1="-20.5969" x2="1299.32" y2="284.007"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="currentColor" />
+            <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+          </linearGradient>
+          <radialGradient id="bg-decoration-v1-fx-1-radial-1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(1572 205) rotate(90) scale(46)">
+            <stop stop-color="var(--color-primary)" stop-opacity="0" />
+            <stop offset="1" stop-color="var(--color-primary)" />
+          </radialGradient>
+        </defs>
+      </svg>
+  </section>
+
+  <!-- Newsletter Form -->
+  <section class="newsletter padding-y-xxl text-center">
+    <div class="container max-width-xs">
+      <div class="text-component margin-bottom-md">
+        <h2>Join our Newsletter</h2>
+        <p>Get our monthly recap with the latest news.</p>
+      </div>
+  
+      <form class="grid gap-xxs">
+        <div class="col@xs min-width-0">
+          <input class="form-control width-100% height-100%" aria-label="Email" type="email" placeholder="Email address">
+        </div>
+  
+        <div class="col-content@xs">
+          <button class="btn btn--primary width-100% height-100%">Subscribe</button>
+        </div>
+      </form>
+  
+      <p role="alert" class="bg-success bg-opacity-20% text-sm padding-xs radius-md margin-top-xs"><strong>Success!</strong> Please check your inbox for a confirmation email.</p>
+  
+      <div class="margin-top-xs">
+        <small class="text-xs color-contrast-medium">By subscribing you agree to our <a class="color-contrast-high" href="#0">privacy policy</a>.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer bg-dark position-relative z-index-1 padding-top-xl">
+    <div class="container max-width-lg">
+      <div class="grid gap-lg">
+        <div class="col-3@lg order-2@lg text-right@lg">
+          <a class="main-footer__logo" href="#0">
+            <svg width="104" height="30" viewBox="0 0 104 30"><title>Go to homepage</title><path d="M37.54 24.08V3.72h4.92v16.37h8.47v4zM60.47 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8 8 0 015.64-2.18 8.07 8.07 0 015.68 2.2 8.49 8.49 0 012 5.69 8.63 8.63 0 01-1.78 5.38 7.6 7.6 0 01-5.89 2.49zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.79 3-2.79 4.26.32 4.23 2.82 4.23zM95.49 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8.4 8.4 0 0111.31 0 8.43 8.43 0 012 5.69 8.6 8.6 0 01-1.77 5.38 7.6 7.6 0 01-5.89 2.51zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.8 3-2.8 4.26.31 4.23 2.83 4.23zM77.66 30c-5.74 0-7-3.25-7.23-4.52l4.6-.26c.41.91 1.17 1.41 2.76 1.41a2.45 2.45 0 002.82-2.53v-2.68a7 7 0 01-1.7 1.75 6.12 6.12 0 01-5.85-.08c-2.41-1.37-3-4.25-3-6.66 0-.89.12-3.67 1.45-5.42a5.67 5.67 0 014.64-2.4c1.2 0 3 .25 4.46 2.82V8.81h4.85v15.33a5.2 5.2 0 01-2.12 4.32A9.92 9.92 0 0177.66 30zm.15-9.66c2.53 0 2.81-2.69 2.81-3.91s-.31-4-2.81-4-2.81 2.8-2.81 4 .27 3.91 2.81 3.91zM55.56 3.72h9.81v2.41h-9.81z" fill="var(--color-contrast-higher)"/><circle cx="15" cy="15" r="15" fill="var(--color-primary)"/></svg>
+          </a>
+        </div>
+        
+        <nav class="col-9@lg order-1@lg">
+          <ul class="grid gap-lg">
+            <li class="col-6@xs col-3@md">
+              <h4 class="margin-bottom-sm text-base@md">Product</h4>
+              <ul class="grid gap-xs text-sm@md">
+                <li><a href="#0" class="main-footer__link">Pricing</a></li>
+                <li><a href="#0" class="main-footer__link">Teams</a></li>
+                <li><a href="#0" class="main-footer__link">Updates</a></li>
+                <li><a href="#0" class="main-footer__link">Features</a></li>
+                <li><a href="#0" class="main-footer__link">Integrations</a></li>
+                <li><a href="#0" class="main-footer__link">Support</a></li>
+              </ul>
+            </li>
+  
+            <li class="col-6@xs col-3@md">
+              <h4 class="margin-bottom-sm text-base@md">Developers</h4>
+              <ul class="grid gap-xs text-sm@md">
+                <li><a href="#0" class="main-footer__link">Documentation</a></li>
+                <li><a href="#0" class="main-footer__link">API reference</a></li>
+                <li><a href="#0" class="main-footer__link">API status</a></li>
+                <li><a href="#0" class="main-footer__link">Open source</a></li>
+              </ul>
+            </li>
+  
+            <li class="col-6@xs col-3@md">
+              <h4 class="margin-bottom-sm text-base@md">Resources</h4>
+              <ul class="grid gap-xs text-sm@md">
+                <li><a href="#0" class="main-footer__link">Tutorials</a></li>
+                <li><a href="#0" class="main-footer__link">Docs</a></li>
+                <li><a href="#0" class="main-footer__link">Community</a></li>
+                <li><a href="#0" class="main-footer__link">Case studies</a></li>
+                <li><a href="#0" class="main-footer__link">Help center</a></li>
+              </ul>
+            </li>
+  
+            <li class="col-6@xs col-3@md">
+              <h4 class="margin-bottom-sm text-base@md">About</h4>
+              <ul class="grid gap-xs text-sm@md">
+                <li><a href="#0" class="main-footer__link">Company</a></li>
+                <li><a href="#0" class="main-footer__link">Customers</a></li>
+                <li><a href="#0" class="main-footer__link">Careers</a></li>
+                <li><a href="#0" class="main-footer__link">Education</a></li>
+                <li><a href="#0" class="main-footer__link">Our story</a></li>
+                <li><a href="#0" class="main-footer__link">Press kit</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    
+      <div class="flex flex-column border-top padding-y-xs margin-top-lg flex-row@md justify-between@md items-center@md">
+        <div class="margin-bottom-sm margin-bottom-0@md">
+          <div class="text-sm text-xs@md color-contrast-medium flex flex-wrap gap-xs">
+            <span>&copy; myWebsite</span>
+            <a href="#0" class="color-contrast-high">Terms</a>
+            <a href="#0" class="color-contrast-high">Privacy</a>
+          </div>
+        </div>
+  
+        <div class="flex items-center gap-xs">
+          <a href="#0" class="main-footer__social">
+            <svg class="icon block" viewBox="0 0 16 16"><title>Follow us on Twitter</title><g><path d="M16,3c-0.6,0.3-1.2,0.4-1.9,0.5c0.7-0.4,1.2-1,1.4-1.8c-0.6,0.4-1.3,0.6-2.1,0.8c-0.6-0.6-1.5-1-2.4-1 C9.3,1.5,7.8,3,7.8,4.8c0,0.3,0,0.5,0.1,0.7C5.2,5.4,2.7,4.1,1.1,2.1c-0.3,0.5-0.4,1-0.4,1.7c0,1.1,0.6,2.1,1.5,2.7 c-0.5,0-1-0.2-1.5-0.4c0,0,0,0,0,0c0,1.6,1.1,2.9,2.6,3.2C3,9.4,2.7,9.4,2.4,9.4c-0.2,0-0.4,0-0.6-0.1c0.4,1.3,1.6,2.3,3.1,2.3 c-1.1,0.9-2.5,1.4-4.1,1.4c-0.3,0-0.5,0-0.8,0c1.5,0.9,3.2,1.5,5,1.5c6,0,9.3-5,9.3-9.3c0-0.1,0-0.3,0-0.4C15,4.3,15.6,3.7,16,3z"></path></g></svg>
+          </a>
+  
+          <a href="#0" class="main-footer__social">
+            <svg class="icon block" viewBox="0 0 16 16"><title>Follow us on Youtube</title><g><path d="M15.8,4.8c-0.2-1.3-0.8-2.2-2.2-2.4C11.4,2,8,2,8,2S4.6,2,2.4,2.4C1,2.6,0.3,3.5,0.2,4.8C0,6.1,0,8,0,8 s0,1.9,0.2,3.2c0.2,1.3,0.8,2.2,2.2,2.4C4.6,14,8,14,8,14s3.4,0,5.6-0.4c1.4-0.3,2-1.1,2.2-2.4C16,9.9,16,8,16,8S16,6.1,15.8,4.8z M6,11V5l5,3L6,11z"></path></g></svg>
+          </a>
+  
+          <a href="#0" class="main-footer__social">
+            <svg class="icon block" viewBox="0 0 16 16"><title>Follow us on Github</title><g><path  d="M8,0.2c-4.4,0-8,3.6-8,8c0,3.5,2.3,6.5,5.5,7.6 C5.9,15.9,6,15.6,6,15.4c0-0.2,0-0.7,0-1.4C3.8,14.5,3.3,13,3.3,13c-0.4-0.9-0.9-1.2-0.9-1.2c-0.7-0.5,0.1-0.5,0.1-0.5 c0.8,0.1,1.2,0.8,1.2,0.8C4.4,13.4,5.6,13,6,12.8c0.1-0.5,0.3-0.9,0.5-1.1c-1.8-0.2-3.6-0.9-3.6-4c0-0.9,0.3-1.6,0.8-2.1 c-0.1-0.2-0.4-1,0.1-2.1c0,0,0.7-0.2,2.2,0.8c0.6-0.2,1.3-0.3,2-0.3c0.7,0,1.4,0.1,2,0.3c1.5-1,2.2-0.8,2.2-0.8 c0.4,1.1,0.2,1.9,0.1,2.1c0.5,0.6,0.8,1.3,0.8,2.1c0,3.1-1.9,3.7-3.7,3.9C9.7,12,10,12.5,10,13.2c0,1.1,0,1.9,0,2.2 c0,0.2,0.1,0.5,0.6,0.4c3.2-1.1,5.5-4.1,5.5-7.6C16,3.8,12.4,0.2,8,0.2z"></path></g></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--backto top-->
+  <a class="back-to-top js-back-to-top" href="#" data-offset="100" data-duration="300">
+    <svg class="icon" viewBox="0 0 20 20"><polyline points="2 13 10 5 18 13" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+  </a>
+
+<script src="assets/js/scripts.min.js"></script>
+</body>
+</html>
