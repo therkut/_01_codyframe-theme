@@ -46,7 +46,7 @@ A collection of web design tools that allow you to set the style of typography e
 
 ## Preview Theme
 
-[Explore the Theme](https://therkut.github.io/_01_codyframe-theme/)
+[Explore the Theme](https://therkut.github.io/_02_codyframe-theme-001/)
 
 ## 
 <p><a href="https://www.buymeacoffee.com/therkut" target="_blank" rel="noreferrer"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="therkut" /></a>
